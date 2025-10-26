@@ -66,29 +66,28 @@ Album preview with cover art
 One-click "Buy Me a Coffee" ❤️
 ---
 
-##🧠 FAQ
+## 🧠 FAQ
 
-❓ Is this safe?
-✅ Yes! Open-source, no malware, no hidden network calls. Antivirus false positives may occur due to PyInstaller — but the code is transparent.
-
----
-
-**❓ Do I need cookies or login?
-**❌ No. KHInsider allows public access to all soundtracks.
+**❓ Question:** Is this safe?  
+**✅ Answer:** Yes! Rias Khinsider Downloader is open source and does not contain malware, ads, or hidden network calls. Some antivirus programs may flag the executable as suspicious due to PyInstaller packaging — these are false positives.
 
 ---
 
-**❓ Can I download FLAC?
-**🔊 Currently, only MP3 is supported (KHInsider serves MP3 by default). FLAC links are detected but not prioritized.
+**❓ Question:** Do I need cookies or login?  
+**✅ Answer:** No. KHInsider provides public access to all soundtracks, so no cookies, accounts, or authentication are required.
 
 ---
 
-**❓ Where are my downloads saved?
-**📁 You choose the folder! The app creates a subfolder named after the album.
+**❓ Question:** Can I download FLAC?  
+**✅ Answer:** Currently, only MP3 is fully supported. While the app can detect FLAC links on KHInsider pages, it prioritizes and downloads MP3 files by default.
 
 ---
 
-**❓ How can I support you?
-**☕ Visit: https://www.coffeebede.com/senpairato
+**❓ Question:** Where are my downloads saved?  
+**✅ Answer:** You choose the destination folder when starting a download. The app automatically creates a subfolder named after the album and saves all tracks (and album art) inside it.
 
+---
 
+**❓ Question:** How can I support you?  
+**✅ Answer:** You can buy me a coffee! ☕  
+Visit: [https://www.coffeebede.com/senpairato](https://www.coffeebede.com/senpairato)
