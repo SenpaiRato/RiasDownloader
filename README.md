@@ -37,9 +37,7 @@ It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art*
 |--------|-------------|
 | 🎵 **Full Album Download** | Download every track from a KHInsider album page in one go. |
 | 🏷️ **Automatic Metadata** | Embeds album title, track title, and artist ("KHInsider") into MP3 files. |
-| 🖼️ **Album Art as Folder Icon** | Sets the downloaded album cover as the Windows folder icon. |
 | ⚡ **Parallel Downloads** | Uses multi-threading for fast, efficient downloads. |
-| 🌓 **Dark/Light/System Theme** | Auto-saves your preferred UI theme between sessions. |
 | 🧼 **No Python Required** | Standalone `.exe` — no runtime dependencies for end users. |
 | 🛡️ **Privacy-Respecting** | No telemetry, no ads, no internet access beyond KHInsider. |
 
@@ -53,7 +51,7 @@ It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art*
 
 1. Go to the **[Releases page](https://github.com/SenpaiRato/RiasKhinsiderDownloader/releases)** and download the latest `.exe`.
 2. Run the program.
-3. Paste a KHInsider album URL (e.g., `https://downloads.khinsider.com/game-soundtracks/album/...`).
+3. Paste a KHInsider album URL (e.g., `https://downloads.khinsider.com/game-soundtracks/album/minecraft`).
 4. Choose a download folder.
 5. Wait — Rias handles the rest! 🎶
 
@@ -61,10 +59,37 @@ It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art*
 
 ---
 
-## 🧰 For Developers (Running from Source)
+##🖥️ Screenshots
 
-If you want to run or modify the source code:
+Clean, modern UI with theme toggle
+Real-time progress bar and status updates
+Album preview with cover art
+One-click "Buy Me a Coffee" ❤️
+---
 
-### Dependencies
-```bash
-pip install customtkinter yt-dlp beautifulsoup4 requests pillow tqdm mutagen
+##🧠 FAQ
+
+❓ Is this safe?
+✅ Yes! Open-source, no malware, no hidden network calls. Antivirus false positives may occur due to PyInstaller — but the code is transparent.
+
+---
+
+**❓ Do I need cookies or login?
+**❌ No. KHInsider allows public access to all soundtracks.
+
+---
+
+**❓ Can I download FLAC?
+**🔊 Currently, only MP3 is supported (KHInsider serves MP3 by default). FLAC links are detected but not prioritized.
+
+---
+
+**❓ Where are my downloads saved?
+**📁 You choose the folder! The app creates a subfolder named after the album.
+
+---
+
+**❓ How can I support you?
+**☕ Visit: https://www.coffeebede.com/senpairato
+
+
