@@ -27,7 +27,6 @@
 **Rias Khinsider Downloader** is a modern, user-friendly desktop application built specifically to download **entire game soundtracks** from [KHInsider](https://downloads.khinsider.com).  
 It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art**, and even **sets the folder icon** to match the album cover — all automatically.
 
-> 💡 Built with ❤️ by [SenpaiRato](https://www.coffeebede.com/senpairato)
 
 ---
 
