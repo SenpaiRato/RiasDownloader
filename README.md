@@ -58,13 +58,6 @@ It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art*
 
 ---
 
-## 🖥️ Screenshots
-
-Clean, modern UI with theme toggle
-Real-time progress bar and status updates
-Album preview with cover art
-One-click "Buy Me a Coffee" ❤️
----
 
 ## 🧠 FAQ
 
