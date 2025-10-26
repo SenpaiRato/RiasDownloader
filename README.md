@@ -1,7 +1,7 @@
 <h1 align="center">🎵 Rias Khinsider Downloader</h1>
 
 <p align="center">
-  <img width="686" height="678" alt="Rias is ready to serve" src="https://github.com/user-attachments/assets/712cd69d-0980-4f68-98a4-3a2237990ae4" />
+  <img width="795" height="523" alt="image" src="https://github.com/user-attachments/assets/79a04986-4966-4e9d-bb8b-70e9ce7b7b58" />
 </p>
 
 <p align="center">
