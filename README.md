@@ -58,7 +58,7 @@ It preserves **track order**, embeds **metadata (ID3 tags)**, saves **album art*
 
 ---
 
-##🖥️ Screenshots
+## 🖥️ Screenshots
 
 Clean, modern UI with theme toggle
 Real-time progress bar and status updates
