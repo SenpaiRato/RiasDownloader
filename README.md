@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/SenpaiRato/RiasKhinsiderDownloader/releases">
-    <img src="https://img.shields.io/github/v/release/SenpaiRato/RiasKhinsiderDownloader?color=6aa6f8&style=for-the-badge" alt="Release">
+  <a href="https://github.com/SenpaiRato/RiasDownloader/releases">
+    <img src="https://img.shields.io/github/v/release/SenpaiRato/RiasDownloader?color=6aa6f8&style=for-the-badge" alt="Release">
   </a>
-  <a href="https://github.com/SenpaiRato/RiasKhinsiderDownloader/issues">
-    <img src="https://img.shields.io/github/issues/SenpaiRato/RiasKhinsiderDownloader?color=fcba03&style=for-the-badge" alt="Issues">
+  <a href="https://github.com/SenpaiRato/RiasDownloader/issues">
+    <img src="https://img.shields.io/github/issues/SenpaiRato/RiasDownloader?color=fcba03&style=for-the-badge" alt="Issues">
   </a>
-  <a href="https://github.com/SenpaiRato/RiasKhinsiderDownloader/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/SenpaiRato/RiasKhinsiderDownloader?color=00c853&style=for-the-badge" alt="License">
+  <a href="https://github.com/SenpaiRato/RiasDownloader/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/SenpaiRato/RiasDownloader?color=00c853&style=for-the-badge" alt="License">
   </a>
 </p>
 
