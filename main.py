@@ -9,7 +9,6 @@ import requests
 from bs4 import BeautifulSoup, Tag, NavigableString
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from tqdm import tqdm
 from PIL import Image, ImageTk
 import tkinter as tk
 import ctypes
@@ -129,24 +128,18 @@ def get_direct_download_link(song_page_url: str) -> str:
 def download_song(song_url: str, folder_path: str, file_name: str):
     safe_name = sanitize_name(file_name) + ".mp3"
     file_path = os.path.join(folder_path, safe_name)
-    if os.path.exists(file_path): return True, file_name
+    if os.path.exists(file_path):
+        return True, file_name
 
     session = get_session()
     try:
         response = session.get(song_url, stream=True, timeout=30)
         response.raise_for_status()
-        total = int(response.headers.get('content-length', 0))
         with open(file_path, 'wb') as f:
-            if total > 0:
-                with tqdm(total=total, unit='B', unit_scale=True, leave=False, desc=f"Downloading {safe_name[:30]}") as p:
-                    for chunk in response.iter_content(8192):
-                        f.write(chunk)
-                        p.update(len(chunk))
-            else:
-                for chunk in response.iter_content(8192):
-                    f.write(chunk)
+            for chunk in response.iter_content(8192):
+                f.write(chunk)
         return True, file_name
-    except:
+    except Exception as e:
         return False, f"{file_name}: Download failed"
 
 def add_metadata_to_mp3(file_path, album_title, track_title):
@@ -306,7 +299,7 @@ class KHInsiderDownloaderUI(ctk.CTk):
         url_frame = ctk.CTkFrame(main_frame)
         url_frame.pack(pady=5, padx=10, fill="x")
         ctk.CTkLabel(url_frame, text="Album URL:").pack(anchor="w", padx=10, pady=(10,0))
-        self.url_entry = ctk.CTkEntry(url_frame, placeholder_text="https://downloads.khinsider.com/game-soundtracks/...    ")
+        self.url_entry = ctk.CTkEntry(url_frame, placeholder_text="https://downloads.khinsider.com/game-soundtracks/...      ")
         self.url_entry.pack(fill="x", padx=10, pady=5)
         self.url_entry.bind('<Return>', lambda event: self.start_download())
         self.download_button = ctk.CTkButton(url_frame, text="Start Download", command=self.start_download)
@@ -327,14 +320,21 @@ class KHInsiderDownloaderUI(ctk.CTk):
         self.status_label.pack(pady=5)
 
     def open_coffee_site(self):
-        webbrowser.open("https://www.coffeebede.com/senpairato  ")
+        webbrowser.open("https://www.coffeebede.com/senpairato")
 
     def start_download(self):
-        if self.downloading: return
-        url = self.url_entry.get().strip()
-        if not url or "khinsider.com" not in url:
-            messagebox.showerror("Error", "Please enter a valid KHInsider URL")
+        if self.downloading:
             return
+        url = self.url_entry.get().strip()
+        if not url:
+            messagebox.showerror("Error", "Please enter a URL")
+            return
+
+        parsed = urlparse(url)
+        if parsed.netloc not in ("downloads.khinsider.com", "khinsider.com"):
+            messagebox.showerror("Error", "Only https://downloads.khinsider.com URLs are supported.")
+            return
+
         self.downloading = True
         self.download_button.configure(state="disabled", text="Downloading...")
         self.update_status("Fetching album information...")
